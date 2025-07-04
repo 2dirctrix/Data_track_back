@@ -19,7 +19,7 @@ embedding_upstage = UpstageEmbeddings(model="embedding-query")
 
 pinecone_api_key = os.environ.get("PINECONE_API_KEY")
 pc = Pinecone(api_key=pinecone_api_key)
-index_name = "galaxy-a35"
+index_name = "printer"
 
 # create new index
 if index_name not in pc.list_indexes().names():
